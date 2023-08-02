@@ -750,6 +750,10 @@ button {
   margin-bottom: 8px;
 }
 
+.modal-form .input-wrap:nth-child(4) {
+  margin-bottom: 16px;
+}
+
 .modal-form .label {
   display: block;
   margin-bottom: 4px;
@@ -806,7 +810,6 @@ button {
   outline: transparent;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 16px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
@@ -841,12 +844,15 @@ button {
   width: 16px;
   height: 16px;
   border-radius: 2px;
-  border: 1px solid var(--subtitle-text-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 
 .modal-form .checkbox:checked + .label .icon-wrap {
+  fill: var(--light-color);
   border: none;
   background-color: var(--pressed-state-color);
 }
