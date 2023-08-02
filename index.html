@@ -376,18 +376,20 @@
           </li>
         </ul>
       </div>
-      <form class="footer-form" name="subscribe-form">
-        <p class="title">Subscribe</p>
-        <label class="label" for="email-input">
-          <input class="email-input" name="email" type="email" placeholder="E-mail" id="email-input">
-        </label>
-        <button class="form-btn" type="submit">
-          Subscribe
-          <svg class="icon" width="24" height="24">
-            <use href="./images/icons.svg#submit"></use>
-          </svg>
-        </button>
-      </form>
+      <dic class="form-wrap">
+        <form class="footer-form" name="subscribe-form">
+          <p class="title">Subscribe</p>
+          <label class="label" for="email-input">
+            <input class="email-input" name="email" type="email" placeholder="E-mail" id="email-input">
+          </label>
+          <button class="form-btn" type="submit">
+            Subscribe
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#submit"></use>
+            </svg>
+          </button>
+        </form>
+      </dic>
     </div>
   </footer>
   <!-- MODAL -->
@@ -398,8 +400,8 @@
           <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
+      <p class="modal-title">Leave your contacts and we will call you back</p>
       <form class="modal-form" name="modal-form">
-        <h2 class="title">Leave your contacts and we will call you back</h2>
         <label for="name" class="label">
           Name
           <input type="text" class="input" id="name">
