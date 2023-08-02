@@ -481,6 +481,69 @@ button {
   background-color: var(--success-color);
 }
 
+.footer .social-wrap {
+  margin-right: 80px;
+}
+
+.footer-form .title {
+  color: var(--white-background-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-form .email-input {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--white-background-color);
+  background-color: transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--white-background-color);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  margin-right: 22px;
+}
+
+.footer-form .email-input::placeholder {
+  color: var(--white-background-color);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-form .form-btn {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form .form-btn:hover,
+.footer-form .form-btn:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.footer-form .icon {
+  fill: currentColor;
+}
+
 /* PORTFOLIO STYLES------------------------------------- */
 
 .portfolio {
@@ -621,6 +684,7 @@ button {
 }
 
 .modal {
+  padding: 72px 24px 24px;
   width: 408px;
   min-height: 584px;
   background-color: var(--modal-background-color);
@@ -665,4 +729,115 @@ button {
 .close-btn:hover .icon,
 .close-btn:focus .icon {
   fill: var(--white-background-color);
+}
+
+.modal-form .title {
+  color: var(--navy-blue-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.modal-form .label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--subtitle-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  margin-bottom: 8px;
+}
+
+.modal-form .input {
+  height: 40px;
+  border-radius: 4px;
+  color: var(--navy-blue-color);
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  background-color: transparent;
+  outline: none;
+  padding: 8px 38px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .input:focus {
+  border: 1px solid var(--primary-brand-color);
+}
+
+.modal-form .input:focus + svg {
+  fill: var(--primary-brand-color);
+}
+
+.modal-form .input-icon {
+  position: absolute;
+  left: 16px;
+  top: 29px;
+  fill: var(--navy-blue-color);
+}
+
+.modal-form .feedback {
+  height: 120px;
+  resize: none;
+  border-radius: 4px;
+  color: var(--navy-blue-color);
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  background-color: transparent;
+  outline: none;
+  padding: 8px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 16px;
+}
+
+.modal-form .feedback:focus {
+  border: 1px solid var(--primary-brand-color);
+}
+
+.modal-form .checkbox-wrap {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.modal-form .policy-title {
+  color: var(--subtitle-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-form .policy-link {
+  color: var(--primary-brand-color);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  text-decoration-line: underline;
+}
+
+.modal .form-btn {
+  display: flex;
+  width: 169px;
+  padding: 16px 32px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-brand-color);
+  color: var(--white-background-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal .form-btn:hover,
+.modal .form-btn:focus {
+  background-color: var(--pressed-state-color);
 }
