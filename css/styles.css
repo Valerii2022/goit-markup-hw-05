@@ -833,9 +833,12 @@ button {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+span {
+  display: inline-flex;
+}
 
 .modal-form .icon-wrap {
-  display: inline-flex;
+  /* display: inline-flex; */
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -863,10 +866,6 @@ button {
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
-}
-
-.checkbox-wrap .icon {
-  display: inline-flex;
 }
 
 .modal .form-btn {
