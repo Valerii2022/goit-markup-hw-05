@@ -741,6 +741,10 @@ button {
   margin-bottom: 16px;
 }
 
+.modal-form .input-wrap {
+  margin-bottom: 8px;
+}
+
 .modal-form .label {
   position: relative;
   display: flex;
@@ -750,7 +754,6 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-  margin-bottom: 8px;
 }
 
 .modal-form .input {
