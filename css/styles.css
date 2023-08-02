@@ -485,7 +485,7 @@ button {
   margin-right: 80px;
 }
 
-.footer-form .title {
+.form-title {
   color: var(--white-background-color);
   font-size: 16px;
   font-weight: 500;
