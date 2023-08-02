@@ -835,7 +835,7 @@ button {
 }
 
 .modal-form .icon-wrap {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
