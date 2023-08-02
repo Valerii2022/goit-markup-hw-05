@@ -797,9 +797,41 @@ button {
 }
 
 .modal-form .checkbox-wrap {
+  position: relative;
   display: flex;
   gap: 8px;
   margin-bottom: 24px;
+}
+
+.checkbox-wrap .label {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.checkbox-wrap .checkbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-form .icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid var(--subtitle-text-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form .checkbox:checked + .icon-wrap {
+  border: none;
+  background-color: var(--pressed-state-color);
 }
 
 .modal-form .policy-title {
