@@ -827,29 +827,23 @@ button {
 }
 
 .checkbox-wrap .label {
-  margin-left: 24px;
   color: var(--subtitle-text-color);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-span {
-  display: inline-flex;
-}
 
 .modal-form .icon-wrap {
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 16px;
   height: 16px;
-  border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   fill: transparent;
 }
 
